@@ -7,7 +7,12 @@ namespace roman_to_integer
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(RomanToInt("III"));
+            Console.WriteLine(RomanToInt("IV"));
             Console.WriteLine(RomanToInt("IX"));
+            Console.WriteLine(RomanToInt("LVIII"));
+            Console.WriteLine(RomanToInt("MCMXCIV"));
+            
         }
 
         static int RomanToInt(string s)
