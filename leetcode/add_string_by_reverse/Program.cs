@@ -24,14 +24,9 @@ namespace add_string_by_reverse
 
             int maxLen = (num1.Length > num2.Length)? num1.Length : num2.Length;
             for (int i = 0; i < maxLen; i++){
-                int num1Val = 0;
-                if (i < num1.Length){
-                    num1Val = (int)(num1[i] - '0');
-                }
-                int num2Val = 0;
-                if (i < num2.Length) {
-                    num2Val = (int)(num2[i] - '0');
-                }
+                int num1Val = (i < num1.Length)? (int)(num1[i] - '0') : 0;
+                int num2Val = (i < num2.Length)? (int)(num2[i] - '0') : 0;
+            
                 int sum = (num1Val + num2Val + remainder);
                 result.Append(sum % 10); 
                 remainder = sum / 10;
