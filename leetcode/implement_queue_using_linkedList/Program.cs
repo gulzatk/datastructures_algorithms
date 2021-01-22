@@ -52,8 +52,8 @@ namespace implement_queue_using_linkedList
             {
                 this.tail = null;
             }
-            return temp.val;
             Console.WriteLine("Item deleted is {0}", temp.val);
+            return temp.val;
         }
 
     }
