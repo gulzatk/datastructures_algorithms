@@ -32,6 +32,7 @@ namespace merge_2_sorted_linkedList
                 merged = merged.next;
             }
         }
+
         static ListNode MergeTwoLists(ListNode l1, ListNode l2)
         {
             ListNode head = new ListNode();            
@@ -63,3 +64,11 @@ namespace merge_2_sorted_linkedList
         }
     }
 }
+
+
+// case 1: l1 = null, l2 = null
+// case 2: l1 = null, l2 != null
+// case 3: l1 != null, l2 = null
+// case 4: l1 = 5, l2 = 7
+// case 5: l1 = 1 -> 9, l2 = 2 -> 11
+
