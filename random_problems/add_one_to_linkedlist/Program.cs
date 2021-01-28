@@ -15,6 +15,7 @@ namespace add_one_to_linkedlist
     }
     class Program
     {
+        // Reverse a linked list
         static ListNode Reverse(ListNode head)
         {
             ListNode prev = null;
@@ -27,6 +28,7 @@ namespace add_one_to_linkedlist
             }
             return prev;
         }
+        // Increment linked list
         static ListNode AddOne(ListNode head)
         {
             head = Reverse(head);
@@ -35,6 +37,7 @@ namespace add_one_to_linkedlist
             ListNode newHead = current;
             int carryOver = current.value / 10;
             current.value %= 10;
+            
             while (head.next != null)
             {
                 current.next = new ListNode(head.next.value + carryOver);
