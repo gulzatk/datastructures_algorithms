@@ -36,7 +36,7 @@ namespace valid_parantheses_stack
                     } 
                     else
                     {
-                        reverse = '{';
+                        reverse = '[';
                     }
                     if (reverse != myStack.Pop())
                     {

@@ -18,17 +18,16 @@ namespace remove_duplicates_sortedArray
                 return 0;
             }
             int temp = 0;
-            for (int i = 0; i < nums.Length - 1; i++)
+            for (int i = 0; i < nums.Length; i++)
             {
-                if (nums[i] != nums[i + 1])
+                if (i == nums.Length-1 || nums[i] != nums[i + 1])
                 {
                     nums[temp++] = nums[i];
                 }
 
-            }
-            nums[temp] = nums[nums.Length - 1];           
+            }           
             
-            return temp + 1;
+            return temp;
         }
 
     }
