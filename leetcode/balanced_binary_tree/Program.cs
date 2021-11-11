@@ -4,7 +4,7 @@ namespace balanced_binary_tree
 {
     class Program
     {
-        public class TreeNode
+    public class TreeNode
     {
         public int val;
         public TreeNode left;
@@ -23,6 +23,10 @@ namespace balanced_binary_tree
             TreeNode n3 = new TreeNode(20);
             TreeNode n4 = new TreeNode(15);
             TreeNode n5 = new TreeNode(7);
+            n1.left = n2;
+            n1.right = n3;
+            n3.left = n4;
+            n3.right = n5;
             Console.WriteLine(IsBalanced(n1));
         }
 
